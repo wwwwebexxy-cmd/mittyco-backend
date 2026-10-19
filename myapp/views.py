@@ -162,7 +162,7 @@ def _safe_session_user(user):
         "first_name": user.first_name,
         "role": user.role,
         "permissions": {"is_super_admin": is_super_admin},
-        "redirect_to": "/eehook-dashboard" if is_super_admin else "/",
+        "redirect_to": "/mittyco-dashboard" if is_super_admin else "/",
     }
 
 

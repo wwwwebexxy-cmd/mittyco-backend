@@ -32,7 +32,7 @@ class OwnerOrderEmailTests(TestCase):
         self.assertEqual(message.reply_to, ["customer@example.test"])
         self.assertIn("ORD-", message.subject)
         self.assertIn(
-            f"https://shop.example.test/eehook-dashboard/orders/{order.id}",
+            f"https://shop.example.test/mittyco-dashboard/orders/{order.id}",
             message.body,
         )
         self.assertEqual(message.alternatives[0][1], "text/html")

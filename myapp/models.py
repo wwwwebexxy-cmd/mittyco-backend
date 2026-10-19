@@ -1016,6 +1016,7 @@ class HeroSideBanner(models.Model):
     def __str__(self):
         return f"Hero Side Banner {self.id}"
 
+
 class Coupon(models.Model):
 
     APPLICABILITY_PRODUCT = "PRODUCT"

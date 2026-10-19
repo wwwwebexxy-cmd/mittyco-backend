@@ -220,6 +220,7 @@ class ProductAdminForm(forms.ModelForm):
         self.save_m2m = save_m2m
         return product
 
+
 @admin.register(Product)
 class ProductAdmin(nested_admin.NestedModelAdmin):
     form = ProductAdminForm

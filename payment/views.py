@@ -212,7 +212,7 @@ def create_checkout_session(request):
         line_items.append(
             {
                 "price_data": {
-                    "currency": "aed",
+                    "currency": "inr",
 
                     "product_data": {
                         "name": item.variant.product.name,
@@ -260,7 +260,7 @@ def create_checkout_session(request):
         line_items.append(
             {
                 "price_data": {
-                    "currency": "aed",
+                    "currency": "inr",
 
                     "product_data": {
                         "name": "Shipping",
@@ -492,7 +492,7 @@ def fulfill_paid_order(session):
         )
 
 
-    if session.currency.lower() != "aed":
+    if session.currency.lower() != "inr":
 
         raise ValueError(
             "Invalid payment currency"

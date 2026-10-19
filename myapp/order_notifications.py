@@ -29,7 +29,7 @@ def _configured_owner_email():
 
 def _dashboard_url(order):
     site_url = str(getattr(settings, "SITE_URL", "")).rstrip("/")
-    return f"{site_url}/eehook-dashboard/orders/{order.pk}"
+    return f"{site_url}/mittyco-dashboard/orders/{order.pk}"
 
 
 def send_owner_order_email(order_id):

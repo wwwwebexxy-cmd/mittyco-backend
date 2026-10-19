@@ -1605,6 +1605,7 @@ class HeroSideBannerSerializer(serializers.ModelSerializer):
         model = HeroSideBanner
         fields = "__all__"
 
+
 class CouponSerializer(serializers.ModelSerializer):
     category_name = serializers.CharField(source="category.name", read_only=True)
     target_name = serializers.SerializerMethodField(read_only=True)
